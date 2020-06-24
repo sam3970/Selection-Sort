@@ -1,10 +1,10 @@
-// Example program
 #include <iostream>
 #include <algorithm>
 #include <vector>
 
 using namespace std;
 
+/* 선택정렬 구현 부분 */
 void selectionsort(vector<int> v)
 {
     for(int i=0;i<v.size()-1;i++)
@@ -27,6 +27,7 @@ int main()
     vec.push_back(3);
     vec.push_back(5);
     
+    /* sort를 쓰면 오름차순 정렬이 가능하다. 즉, 정렬 알고리즘보다 간편하게 값을 순차적으로 나열할 수 있다. */
     sort(vec.begin(), vec.end());
     selectionsort(vec);
     
